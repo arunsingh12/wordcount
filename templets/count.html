@@ -1,0 +1,14 @@
+<h1> Counted</h1>
+<a href="{% url  'home' %}">Back to Home</a>
+<h2>Your text</h2>
+{{ fulltext }}
+<br>
+<h2>word count</h2>
+ Total words = {{ words}}
+</br></br>
+ 
+{% for word,value in worddictionary %}
+{{word}} = {{ value }}
+</br>
+{% endfor %}
+
